@@ -8,7 +8,7 @@ async function bootstrap() {
   dotenv.config();
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   app.enableCors({
-    origin: "",
+    origin: 'https://vigorgym1.onrender.com',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   }); // Enable CORS
